@@ -12,18 +12,20 @@ public class DriverFactory {
  * @return
  */
 	public WebDriver init_driver(String browser) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		System.out.println("browser value is: " + browser);
-
+		String currentDir=System.getProperty("user.dir");
+		String chromeDriverLocation=currentDir +"/src/test/resources/chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
+		
 		if (browser.equals("chrome")) {
 			driver = new ChromeDriver();
-		} else if (browser.equals("firefox")) {
+		} 
+		if (browser.equals("firefox")) {
 			
-		} else if (browser.equals("safari")) {
+		} 
+		if (browser.equals("safari")) {
 			
-		} else {
-			System.out.println("Please pass the correct browser value: " + browser);
 		}
+		
 		return getdriver();
 
 

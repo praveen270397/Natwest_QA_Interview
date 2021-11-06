@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 4, 2021 03:00:32 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 6, 2021 08:43:48 pm</span></a>
 </li>
 </ul>
 </div>
@@ -61,19 +61,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 4, 2021 03:00:32 pm</h3>
+<h3>Nov 6, 2021 08:43:48 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 4, 2021 03:01:58 pm</h3>
+<h3>Nov 6, 2021 08:45:23 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -96,7 +96,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>2</b> features passed
+<b>1</b> features passed
 </small>
 </div>
 <div>
@@ -138,7 +138,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -157,7 +157,7 @@
 </div></div>
 <script>
 var timeline = {
-"Customer information update":32.057,"Order Validation":52.717
+"Purchase Product Validation and Account details update":93.267
 };
 </script>
 <div class="row">
@@ -188,7 +188,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 1,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -199,7 +199,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
+passGrandChild: 15,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -229,9 +229,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Customer information update</p>
+            <p class="name">Purchase Product Validation and Account details update</p>
             <p class="text-sm">
-              <span>15:00:34 pm</span> / <span>00:00:32:057</span>
+              <span>20:43:49 pm</span> / <span>00:01:33:267</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -239,10 +239,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Customer information update</h5>
-<span class='badge badge-success'>11.04.2021 15:00:34</span>
-<span class='badge badge-danger'>11.04.2021 15:01:06</span>
-<span class='badge badge-default'>00:00:32:057</span>
+<h5 class="test-status text-pass">Purchase Product Validation and Account details update</h5>
+<span class='badge badge-success'>11.06.2021 20:43:49</span>
+<span class='badge badge-danger'>11.06.2021 20:45:22</span>
+<span class='badge badge-default'>00:01:33:267</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -252,92 +252,33 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Update Personal Information (First Name) in My Account</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Order T-Shirt and Verify the order in Order History</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.user_logged_into_the_application_with_valid_username_and_password()">
-                <span>Given user logged into the application with valid username and password.</span>
+              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.user_clicks_on_sign_in_on_index_page()">
+                <span>Given user clicks on sign in  on index page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.user_clicks_on_the_account_information()">
-                <span>When user clicks on the account information</span>
+              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.enters_valid_username_and_password_and_clicks_on_sign_in()">
+                <span>When enters valid username and password and clicks on sign in</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.click_on_my_personal_information()">
-                <span>And click on my personal information</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.update_firstname_as_and_save(java.lang.String)">
-                <span>And update firstname as "Pav" and save</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.the_firstname_should_be_updated_successfully_and_validated()">
-                <span>Then the firstname should be updated successfully and validated.</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Order Validation</p>
-            <p class="text-sm">
-              <span>15:01:06 pm</span> / <span>00:00:52:717</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Order Validation</h5>
-<span class='badge badge-success'>11.04.2021 15:01:06</span>
-<span class='badge badge-danger'>11.04.2021 15:01:58</span>
-<span class='badge badge-default'>00:00:52:717</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Order T-Shirt and Verify the order in Order History</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.user_logged_into_the_application_with_valid_username_and_password()">
-                <span>Given user logged into the application with valid username and password.</span>
+              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.user_should_be_logged_in_succesfully()">
+                <span>Then user should be logged in succesfully</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepdefinitions.ProductPageSteps.user_select_the_product(java.lang.String)">
-                <span>When user select the product "T-shirt"</span>
+                <span>Given user select the product "T-shirt"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.AddToCartPageSteps.add_the_product_to_Add_to_cart()">
-                <span>And add the product to Add to cart</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CartNavigationPageSteps.perform_cart_navigation_to_payment_page()">
-                <span>And perform cart navigation to payment page</span>
+              <div class="step pass-bg" title="stepdefinitions.CartNavigationPageSteps.add_the_product_to_add_to_cart_and_perform_cart_navigation_to_payment_page()">
+                <span>And add the product to Add to cart and perform cart navigation to payment page</span>
       <div>
       </div>
               </div>
@@ -353,6 +294,52 @@ eventsCount: 5,
               </div>
               <div class="step pass-bg" title="stepdefinitions.OrderHistoryPageSteps.the_order_reference_id_and_amount_should_be_validated_in_orderhistory_page()">
                 <span>Then the order reference id and amount should be validated in orderhistory page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Update Personal Information (First Name) in My Account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.user_clicks_on_sign_in_on_index_page()">
+                <span>Given user clicks on sign in  on index page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.enters_valid_username_and_password_and_clicks_on_sign_in()">
+                <span>When enters valid username and password and clicks on sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginpageSteps.user_should_be_logged_in_succesfully()">
+                <span>Then user should be logged in succesfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.user_clicks_on_the_account_information()">
+                <span>Given user clicks on the account information</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.click_on_my_personal_information()">
+                <span>And click on my personal information</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.update_firstname_as_and_save(java.lang.String)">
+                <span>And update firstname as "Pav" and save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.CustomerAccountViewPageSteps.the_firstname_should_be_updated_successfully_and_validated()">
+                <span>Then the firstname should be updated successfully and validated.</span>
       <div>
       </div>
               </div>

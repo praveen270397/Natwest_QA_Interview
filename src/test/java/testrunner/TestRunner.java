@@ -12,11 +12,10 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/resources/com/features",
 		glue = {"stepdefinitions","Hooks"},
 		dryRun = false,
-		monochrome = true,
+		monochrome = false,
 		plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 			
 		)
-
 public class TestRunner {
 
 }

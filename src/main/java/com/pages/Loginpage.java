@@ -4,10 +4,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.qa.util.ConfigReader;
 
 public class Loginpage {
 	WebDriver driver;
+	ConfigReader configs = new ConfigReader();
 	private By Sign_in =  By.xpath("//a[@title='Log in to your customer account']");
 	private By Email_id = By.id("email");
 	private By Password= By.id("passwd");
@@ -24,19 +25,21 @@ public class Loginpage {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
-	public WebElement getEmail_id() {
-		return driver.findElement(Email_id);
+	public void Email_id() {
+		 driver.findElement(Email_id).sendKeys(configs.init_prop().getProperty("username"));
 	}
-	public WebElement getPassword() {
-		return driver.findElement(Password);
+	public void Password() {
+		driver.findElement(Password).sendKeys(configs.init_prop().getProperty("password"));
 	}
-	public WebElement getSubmit() {
-		return driver.findElement(submit);
+	public void Submit() {
+		driver.findElement(submit).click();
 	}
-	public WebElement getSign_in() {
-		return driver.findElement(Sign_in);
+	public void Sign_in() {
+		driver.findElement(Sign_in).click();
 	}
-
+	public String title() {
+		return driver.getTitle();
+	}
 
 
 

@@ -2,7 +2,7 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 
 public class CartNavigationPage {
 
@@ -21,31 +21,31 @@ WebDriver driver;
 	private By Proceed_to_checkout_shipping =  By.xpath("//button[contains(@name,'processCarrier')]/span[contains(text(),'Proceed to checkout')]");
 
 
-	public WebElement getProceed_to_checkout() {
-		return driver.findElement(Proceed_to_checkout);
+	public void Proceed_to_checkout() {
+		driver.findElement(Proceed_to_checkout).click();
 	}
 
 
-	public WebElement getProceed_to_checkout_summary() {
-		return driver.findElement(Proceed_to_checkout_summary);
+	public void Proceed_to_checkout_summary() {
+		 driver.findElement(Proceed_to_checkout_summary).click();
 	}
 
 
-	public WebElement getProceed_to_checkout_address() {
-		return driver.findElement(Proceed_to_checkout_address);
+	public void Proceed_to_checkout_address() {
+		 driver.findElement(Proceed_to_checkout_address).click();
 	}
 
 
 	
 
 
-	public WebElement getProceed_to_checkout_shipping() {
-		return driver.findElement(Proceed_to_checkout_shipping);
+	public void Proceed_to_checkout_shipping() {
+		driver.findElement(Proceed_to_checkout_shipping).click();
 	}
 
 
-	public WebElement getAgree_terms() {
-		return driver.findElement(Agree_terms);
+	public void Agree_terms() {
+		 driver.findElement(Agree_terms).click();
 	}
 
 }

@@ -15,17 +15,14 @@ private By Order_confirmation = By.xpath("//button[@type='submit']/span[contains
 		this.driver =driver;
 	}
 
-	public WebElement getPay_option() {
-		return pay_option_mode;
+
+	public void Order_confirmation() {
+		 driver.findElement(Order_confirmation).click();
 	}
 
-	public WebElement getOrder_confirmation() {
-		return driver.findElement(Order_confirmation);
-	}
-
-	public void setPay_option(String pay_mode) {
+	public void Pay_option(String pay_mode) {
 		
-		pay_option_mode = driver.findElement(By.xpath("//p[@class='payment_module']/a[@title='"+pay_mode+"']"));
+	 driver.findElement(By.xpath("//p[@class='payment_module']/a[@title='"+pay_mode+"']")).click();
 	}
 	
 

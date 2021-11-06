@@ -19,19 +19,14 @@ public class ProductPage {
 }
 
 
-	public void setProduct_tab_select(String product) {
+	public void Product_tab_select(String product) {
 
-		product_tab_select_value =  driver.findElement(By.xpath("//ul[contains(@class,'sf-menu clearfix')]/li/a[contains(text(),'"+product+"')]"));
+		 driver.findElement(By.xpath("//ul[contains(@class,'sf-menu clearfix')]/li/a[contains(text(),'"+product+"')]")).click();
 		
 	}
 
-	public WebElement getProduct_tab_select() {
-	
-		return product_tab_select_value;
-	}
 
-
-	public WebElement getProduct_select() {
-		return driver.findElement(Product_select);
+	public void Product_select() {
+		 driver.findElement(Product_select).click();
 	}
 }
