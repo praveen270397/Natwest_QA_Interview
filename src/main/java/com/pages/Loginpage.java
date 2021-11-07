@@ -21,20 +21,20 @@ public class Loginpage {
 	public void launchAppUrl()
 	{
 		
-		driver.get("http://automationpractice.com");
+		driver.get(configs.initProp().getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
-	public void Email_id() {
-		 driver.findElement(Email_id).sendKeys(configs.init_prop().getProperty("username"));
+	public void emailId() {
+		 driver.findElement(Email_id).sendKeys(configs.initProp().getProperty("username"));
 	}
 	public void Password() {
-		driver.findElement(Password).sendKeys(configs.init_prop().getProperty("password"));
+		driver.findElement(Password).sendKeys(configs.initProp().getProperty("password"));
 	}
-	public void Submit() {
+	public void submit() {
 		driver.findElement(submit).click();
 	}
-	public void Sign_in() {
+	public void signIn() {
 		driver.findElement(Sign_in).click();
 	}
 	public String title() {

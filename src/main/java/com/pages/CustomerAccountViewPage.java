@@ -2,10 +2,12 @@ package com.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.util.ConfigReader;
+
 
 public class CustomerAccountViewPage {
 	WebDriver driver;
-
+	ConfigReader configs = new ConfigReader();
 	private By view_customer_account = By.xpath("//a[@title='View my customer account']/span[contains(text(),'Muthusamy')]");
 	private By Personal_information = By.xpath("//a[@title='Information']/span");
 	private By firstname = By.id("firstname");
@@ -38,7 +40,7 @@ public class CustomerAccountViewPage {
 	}
 
 	public void Password() {
-		 driver.findElement(password).sendKeys("Helpallpoor");
+		 driver.findElement(password).sendKeys(configs.initProp().getProperty("password"));
 	}
 
 	public String getView_customer_account_postupdate() {

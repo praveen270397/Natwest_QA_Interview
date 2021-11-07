@@ -19,14 +19,14 @@ public class ProductPage {
 }
 
 
-	public void Product_tab_select(String product) {
+	public void productTabSelect(String product) {
 
 		 driver.findElement(By.xpath("//ul[contains(@class,'sf-menu clearfix')]/li/a[contains(text(),'"+product+"')]")).click();
 		
 	}
 
 
-	public void Product_select() {
+	public void productSelect() {
 		 driver.findElement(Product_select).click();
 	}
 }

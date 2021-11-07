@@ -2,6 +2,9 @@ package com.qa.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
@@ -11,22 +14,24 @@ public class DriverFactory {
  * @param browser
  * @return
  */
-	public WebDriver init_driver(String browser) {
-		String currentDir=System.getProperty("user.dir");
-		String chromeDriverLocation=currentDir +"/src/test/resources/chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
+	public WebDriver initDriver(String browser) {
+		//String currentDir=System.getProperty("user.dir");
+		//String chromeDriverLocation=currentDir +"/src/test/resources/chromedriver.exe";
+		//System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
 		
 		if (browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} 
 		if (browser.equals("firefox")) {
-			
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 		} 
 		if (browser.equals("safari")) {
 			
 		}
 		
-		return getdriver();
+		return getDriver();
 
 
 	}
@@ -34,7 +39,7 @@ public class DriverFactory {
  * This method returns the driver to WebDriver init_driver method.
  * @return
  */
-public static WebDriver getdriver() {
+public static WebDriver getDriver() {
 return driver;	
 }
 }

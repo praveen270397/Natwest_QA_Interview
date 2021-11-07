@@ -16,7 +16,7 @@ public class OrderCreationPage {
 		this.driver = driver;
 	}
 
-	public void order_creation() {
+	public void orderCreation() {
 			
 		String order_id = 	driver.findElement(order_creation).getText();
 			String[] order_para = order_id.split("-");
@@ -28,7 +28,7 @@ public class OrderCreationPage {
         
 	}
 
-	public void Back_to_orders() {
+	public void backToOrders() {
 		 driver.findElement(back_to_orders).click();
 	}
 	

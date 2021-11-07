@@ -21,17 +21,17 @@ WebDriver driver;
 	private By Proceed_to_checkout_shipping =  By.xpath("//button[contains(@name,'processCarrier')]/span[contains(text(),'Proceed to checkout')]");
 
 
-	public void Proceed_to_checkout() {
+	public void proceedToCheckout() {
 		driver.findElement(Proceed_to_checkout).click();
 	}
 
 
-	public void Proceed_to_checkout_summary() {
+	public void proceedToCheckoutSummary() {
 		 driver.findElement(Proceed_to_checkout_summary).click();
 	}
 
 
-	public void Proceed_to_checkout_address() {
+	public void proceedToCheckoutAddress() {
 		 driver.findElement(Proceed_to_checkout_address).click();
 	}
 
@@ -39,12 +39,12 @@ WebDriver driver;
 	
 
 
-	public void Proceed_to_checkout_shipping() {
+	public void proceedToCheckoutShipping() {
 		driver.findElement(Proceed_to_checkout_shipping).click();
 	}
 
 
-	public void Agree_terms() {
+	public void agreeTerms() {
 		 driver.findElement(Agree_terms).click();
 	}
 

@@ -27,7 +27,7 @@ public class ApplicationHooks {
 	@Before(order = 0)
 	public void getProperty() {
 		configReader = new ConfigReader();
-		prop = configReader.init_prop();
+		prop = configReader.initProp();
 	}
 	
 	/**
@@ -38,7 +38,7 @@ public class ApplicationHooks {
 	public void launchBrowser() {
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
-		driver = driverFactory.init_driver(browserName);
+		driver = driverFactory.initDriver(browserName);
 		
 	}
 /**

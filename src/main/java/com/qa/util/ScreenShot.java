@@ -14,7 +14,7 @@ public class ScreenShot {
 		if (scenario.isFailed()) {
 			// take screenshot:
 			String screenshotName = scenario.getName().replaceAll(" ", "_");
-			byte[] sourcePath = ((TakesScreenshot) DriverFactory.getdriver()).getScreenshotAs(OutputType.BYTES);
+			byte[] sourcePath = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(sourcePath, "image/png", screenshotName);
 
 		}

@@ -17,7 +17,7 @@ public class OrderHistoryPage {
 
 	}
 
-	public String Amount() {
+	public String amount() {
 
 		String Amount = driver.findElement(By.xpath("//table[@id = 'order-list']/tbody/tr/td[3]/span")).getText();
 

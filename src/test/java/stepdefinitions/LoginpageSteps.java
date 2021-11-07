@@ -1,7 +1,6 @@
 package stepdefinitions;
 
-import org.testng.Assert;
-
+import static org.junit.Assert.assertEquals;
 import com.pages.Loginpage;
 import com.qa.factory.DriverFactory;
 
@@ -12,28 +11,26 @@ import io.cucumber.java.en.When;
 
 public class LoginpageSteps {
 	
-	Loginpage loginpage = new Loginpage(DriverFactory.getdriver());
+	Loginpage loginpage = new Loginpage(DriverFactory.getDriver());
 	
     
 @Given("user clicks on sign in  on index page")
 public void user_clicks_on_sign_in_on_index_page() {
 	loginpage.launchAppUrl();
-	loginpage.Sign_in();   
+	loginpage.signIn();   
 }
 
-@When("enters valid username and password and clicks on sign in")
+@When("enters valid username and password and clicks on signIn")
 public void enters_valid_username_and_password_and_clicks_on_sign_in() {
-	loginpage.Email_id();
+	loginpage.emailId();
     loginpage.Password();
-    loginpage.Submit();
+    loginpage.submit();
 
 }
 
-@Then("user should be logged in succesfully")
+@Then("user should be logged in successfully")
 public void user_should_be_logged_in_succesfully() {
 	
-	String Expected_title = loginpage.title();
-	Assert.assertEquals("My account - My Store", Expected_title);
-	
+	assertEquals("My account - My Store", loginpage.title());
 }
 }

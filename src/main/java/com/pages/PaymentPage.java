@@ -16,11 +16,11 @@ private By Order_confirmation = By.xpath("//button[@type='submit']/span[contains
 	}
 
 
-	public void Order_confirmation() {
+	public void orderConfirmation() {
 		 driver.findElement(Order_confirmation).click();
 	}
 
-	public void Pay_option(String pay_mode) {
+	public void payOption(String pay_mode) {
 		
 	 driver.findElement(By.xpath("//p[@class='payment_module']/a[@title='"+pay_mode+"']")).click();
 	}

@@ -1,6 +1,10 @@
 package stepdefinitions;
 
-import org.testng.Assert;
+
+import static org.junit.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
+
+//import org.testng.Assert;
 
 import com.pages.CustomerAccountViewPage;
 import com.qa.factory.DriverFactory;
@@ -12,7 +16,7 @@ import io.cucumber.java.en.When;
 public class CustomerAccountViewPageSteps {
 
 	
-	CustomerAccountViewPage customerAccountViewPage = new CustomerAccountViewPage(DriverFactory.getdriver());
+	CustomerAccountViewPage customerAccountViewPage = new CustomerAccountViewPage(DriverFactory.getDriver());
 	String firstname_update;
 	
 	@Given("user clicks on the account information")
@@ -38,9 +42,6 @@ public class CustomerAccountViewPageSteps {
 	@Then("the firstname should be updated successfully and validated.")
 	public void the_firstname_should_be_updated_successfully_and_validated() {
 		
-		String Expected_name = customerAccountViewPage.getView_customer_account_postupdate();
-		
-        Assert.assertEquals(Expected_name, firstname_update);
-	    
+	    assertEquals(customerAccountViewPage.getView_customer_account_postupdate(), firstname_update);
 	}
 }

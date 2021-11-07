@@ -9,12 +9,12 @@ import io.cucumber.java.en.Given;
 
 public class ProductPageSteps {
 
-	ProductPage productPage = new ProductPage(DriverFactory.getdriver());
+	ProductPage productPage = new ProductPage(DriverFactory.getDriver());
 	
 	@Given("user select the product {string}")
 	public void user_select_the_product(String product) {
-		productPage.Product_tab_select(product);
-		productPage.Product_select();
+		productPage.productTabSelect(product);
+		productPage.productSelect();
 		
 	}
 
