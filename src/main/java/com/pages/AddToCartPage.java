@@ -18,6 +18,10 @@ public class AddToCartPage {
 		 driver.findElement(Add_to_cart).click();
 	}
 
+	
+	
+	
+	
 
 
 
