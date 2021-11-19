@@ -28,6 +28,11 @@ dfjdfj
 	}public void addToCart() {
 		 driver.findElement(Add_to_cart).click();
 	}
+	private By Add_to_cart =  By.xpath("//button[@name = 'Submit']/span[contains(text(),'Add to cart')]");
+
+	public void addToCart() {
+		 driver.findElement(Add_to_cart).click();
+	}
 
 
 
