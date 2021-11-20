@@ -19,3 +19,10 @@ Given user clicks on the account information
 And click on my personal information
 And update firstname as "Pav" and save
 Then the firstname should be updated successfully and validated.
+
+@firstNameUpdate
+Scenario: Update Personal Information (First Name) in My Account
+Given user clicks on the account information
+And click on my personal information
+And update firstname as "Pav" and save
+Then the firstname should be updated successfully and validated.
