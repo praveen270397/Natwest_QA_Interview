@@ -16,30 +16,6 @@ public class AddToCartPage {
 	
 
 
-	Hey i am seond person
-	hfhh
-dfhdf
-dfjdfj
-
->>>>>>> master
-	public void addToCart() {
-
-		 driver.findElement(Add_to_cart).click();
-	}public void addToCart() {
-		 driver.findElement(Add_to_cart).click();
-	}
-	private By Add_to_cart =  By.xpath("//button[@name = 'Submit']/span[contains(text(),'Add to cart')]");
-
-	public void addToCart() {
-		 driver.findElement(Add_to_cart).click();
-	}
-	private By Add_to_cart =  By.xpath("//button[@name = 'Submit']/span[contains(text(),'Add to cart')]");
-
-	public void addToCart() {
-		 driver.findElement(Add_to_cart).click();
-	}
-	private By Add_to_cart =  By.xpath("//button[@name = 'Submit']/span[contains(text(),'Add to cart')]");
-
 	public void addToCart() {
 		 driver.findElement(Add_to_cart).click();
 	}
