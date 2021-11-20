@@ -20,7 +20,7 @@ public class AddToCartPage {
 	hfhh but y
 dfhdf
 dfjdfj
-
+mgklsdngjksdnjkgb
 	public void addToCart() {
 
 		 driver.findElement(Add_to_cart).click();
