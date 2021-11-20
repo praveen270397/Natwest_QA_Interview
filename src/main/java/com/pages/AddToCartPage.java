@@ -15,6 +15,13 @@ public class AddToCartPage {
 	private By Add_to_cart =  By.xpath("//button[@name = 'Submit']/span[contains(text(),'Add to cart')]");
 	
 
+<<<<<<< HEAD
+=======
+	Hey i am seond person
+	hfhh but y
+dfhdf
+dfjdfj
+>>>>>>> master
 
 	public void addToCart() {
 		 driver.findElement(Add_to_cart).click();
