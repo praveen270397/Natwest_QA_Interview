@@ -27,6 +27,7 @@ public class Loginpage {
 	}
 	public void emailId() {
 			System.out.println(System.getProperty("username"));
+		System.out.println("whhythe fuvvk tjdinvdk");
 		 driver.findElement(Email_id).sendKeys(System.getProperty("username"));
 	}
 	public void Password() {
