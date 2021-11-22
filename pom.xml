@@ -128,8 +128,8 @@
 				<configuration>
 					<systemPropertyVariables>
 				<browser>${browser}</browser>
-				<username>${Dusername}</username>
-				<password>${Dpassword}</password>
+				<username>${username}</username>
+				<password>${password}</password>
 				</systemPropertyVariables>
 					<includes>
 						<include>**/*Runner.java</include>
