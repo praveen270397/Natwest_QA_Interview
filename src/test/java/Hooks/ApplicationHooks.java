@@ -38,8 +38,8 @@ public class ApplicationHooks {
 	public void launchBrowser() {
 		//String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
-		system.out.println(System.getProperty("browser"));
-		system.out.println("sdgdsgdgdhfdh");
+		System.out.println(System.getProperty("browser"));
+		System.out.println("sdgdsgdgdhfdh");
 		driver = driverFactory.initDriver(System.getProperty("browser"));
 		
 	}
