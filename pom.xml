@@ -127,9 +127,9 @@
 				<version>2.22.0</version>
 				<configuration>
 					<systemPropertyVariables>
-				<browser>${browser}</browser>
-				<username>${username}</username>
-				<password>${password}</password>
+				<browser>${Dbrowser}</browser>
+				<username>${Dusername}</username>
+				<password>${Dpassword}</password>
 				</systemPropertyVariables>
 					<includes>
 						<include>**/*Runner.java</include>
