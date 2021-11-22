@@ -127,7 +127,7 @@
 				<version>2.22.0</version>
 				<configuration>
 					<systemPropertyVariables>
-				<browser>${Dbrowser}</browser>
+				<browser>${browser}</browser>
 				<username>${Dusername}</username>
 				<password>${Dpassword}</password>
 				</systemPropertyVariables>
