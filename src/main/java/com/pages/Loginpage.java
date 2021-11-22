@@ -26,10 +26,10 @@ public class Loginpage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	public void emailId() {
-		 driver.findElement(Email_id).sendKeys(configs.initProp().getProperty("username"));
+		 driver.findElement(Email_id).sendKeys(System.getProperty("username"));
 	}
 	public void Password() {
-		driver.findElement(Password).sendKeys(configs.initProp().getProperty("password"));
+		driver.findElement(Password).sendKeys(System.getProperty("password"));
 	}
 	public void submit() {
 		driver.findElement(submit).click();
