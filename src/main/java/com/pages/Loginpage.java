@@ -26,6 +26,7 @@ public class Loginpage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	public void emailId() {
+			System.out.println(System.getProperty("username"));
 		 driver.findElement(Email_id).sendKeys(System.getProperty("username"));
 	}
 	public void Password() {
