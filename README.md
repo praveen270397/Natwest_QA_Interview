@@ -10,6 +10,10 @@ Maven commands:
 
 mvn test -> In order to execute the test scenarios and generate Extent Report
 
+Execute via feature file
+
+navigate to 
+
 Post execution Extent Report will be generated in below path.
 
 \Cucumber_project\test-output\SparkReport\Index.html
