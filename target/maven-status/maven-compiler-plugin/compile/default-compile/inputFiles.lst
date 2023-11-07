@@ -1,12 +1,5 @@
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\OrderHistoryPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\Loginpage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\ProductPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\qa\util\ConfigReader.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\AddToCartPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\CartNavigationPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\OrderCreationPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\CustomerAccountViewPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\pages\PaymentPage.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\qa\factory\DriverFactory.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\qa\util\JavaUtility.java
-C:\Users\DELL\eclipse-workspace\Cucumber_project\src\main\java\com\qa\util\ScreenShot.java
+C:\Users\Praveen\Documents\Cucumber_automation\src\main\java\com\pages\Loginpage.java
+C:\Users\Praveen\Documents\Cucumber_automation\src\main\java\com\qa\util\JavaUtility.java
+C:\Users\Praveen\Documents\Cucumber_automation\src\main\java\com\qa\util\ScreenShot.java
+C:\Users\Praveen\Documents\Cucumber_automation\src\main\java\com\qa\util\ConfigReader.java
+C:\Users\Praveen\Documents\Cucumber_automation\src\main\java\com\qa\factory\DriverFactory.java
